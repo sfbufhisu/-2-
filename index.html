@@ -1,0 +1,195 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>伍泳姿 | 电商美工 & 3D 建模渲染作品集</title>
+    <meta name="description" content="伍泳姿的电商美工、3D 建模渲染、详情页、主图与海报作品集。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="site-shell">
+                  <header class="topbar" aria-label="网站导航">
+        <a class="brand" href="#intro" aria-label="回到首页">
+          <span class="brand-mark">WY</span>
+          <span>伍泳姿</span>
+        </a>
+        <nav class="nav-links" aria-label="页面导航">
+          <a href="#intro">个人介绍</a>
+          <a href="#works">作品</a>
+          <a href="#contact">联系</a>
+        </nav>
+        <a class="top-action" href="#contact">联系我</a>
+      </header>      <main>
+        <section class="hero section-panel" id="intro">
+          <div class="hero-bg galaxy-bg" aria-hidden="true">
+            <canvas id="galaxyCanvas"></canvas>
+            <div class="hero-bg__veil"></div>
+          </div>
+
+          <div class="hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">E-commerce Visual Designer / 3D Rendering</p>
+              <h1>伍泳姿</h1>
+              <p class="hero-lede">
+                专注电商视觉、产品 3D 建模渲染、主图视频与详情页设计。擅长从产品卖点出发，搭建场景、精修画面、组织信息层级，输出更有购买欲的商业成品图。
+              </p>
+              <div class="hero-actions">
+                <a class="primary-btn" href="#works">查看作品</a>
+                <a class="secondary-btn" href="mailto:3224315229@qq.com">发送邮件</a>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal" aria-label="作品风格预览">
+              <div class="scan-frame">
+                <img src="./assets/images/full/ai-amazon-main.jpg" alt="亚马逊产品主图展示" loading="eager">
+                <div class="scan-line"></div>
+              </div>
+              <div class="floating-stat stat-one">
+                <span>2024-2026</span>
+                <strong>3D 建模渲染师</strong>
+              </div>
+              <div class="floating-stat stat-two">
+                <span>Focus</span>
+                <strong>电商美工 3D</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-strip reveal">
+            <div>
+              <span>工作经验</span>
+              <strong>产品建模 / 场景渲染 / 活动促销图 / 主图视频</strong>
+            </div>
+            <div>
+              <span>设计能力</span>
+              <strong>精修、详情页排版、主图、SKU、3D 展示动画</strong>
+            </div>
+            <div>
+              <span>所在城市</span>
+              <strong>广东深圳</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="about section-panel" aria-labelledby="about-title">
+          <div class="section-head reveal">
+            <p class="eyebrow">Capability Matrix</p>
+            <h2 id="about-title">能力展示</h2>
+          </div>
+          <div class="ability-grid">
+            <article class="ability-item reveal">
+              <span>01</span>
+              <h3>3D 建模与渲染</h3>
+              <p>Cinema 4D、Octane、KeyShot，适合产品级高质量图像输出与电商场景搭建。</p>
+            </article>
+            <article class="ability-item reveal">
+              <span>02</span>
+              <h3>电商视觉设计</h3>
+              <p>主图、详情页、SKU、促销海报，从卖点逻辑到页面节奏都有完整执行经验。</p>
+            </article>
+            <article class="ability-item reveal">
+              <span>03</span>
+              <h3>视频与 AI 工具</h3>
+              <p>After Effects、主图动画、产品 3D 展示视频，并结合 liblib.TV、Codex、lovart 提升产出效率。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="works section-panel" id="works" aria-labelledby="works-title">
+          <div class="section-head reveal">
+            <p class="eyebrow">Selected Works</p>
+            <h2 id="works-title">作品分类</h2>
+            <p>按素材内容整理为详情页、海报 KV、亚马逊/A+、AI 主图与详情页。悬停可查看动态信息，点击打开完整作品。</p>
+          </div>
+
+          <div class="filter-bar reveal" role="tablist" aria-label="作品分类筛选">
+            <button class="filter-btn active" type="button" data-filter="all">全部</button>
+            <button class="filter-btn" type="button" data-filter="detail">电商详情页</button>
+            <button class="filter-btn" type="button" data-filter="poster">海报 KV</button>
+            <button class="filter-btn" type="button" data-filter="amazon">亚马逊 / A+</button>
+            <button class="filter-btn" type="button" data-filter="ai">AI 主图</button>
+          </div>
+
+          <div class="drift-wall" id="workGrid" aria-live="polite" aria-label="漂移作品墙"></div>
+        </section>
+
+                        <section class="resume section-panel foldcraft-stage" aria-labelledby="resume-title">
+          <video class="foldcraft-video" src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260622_204221_5339e40b-e73d-4ab0-9c65-79c18c66fd50.mp4" autoplay muted loop playsinline></video>
+          <div class="section-head reveal">
+            <p class="eyebrow">Experience</p>
+            <h2 id="resume-title">经历与工具</h2>
+          </div>
+          <div class="resume-layout">
+            <div class="timeline reveal">
+              <div class="time-node">
+                <span>2021.9 - 2024.6</span>
+                <h3>广州市信息技术职业学校</h3>
+                <p>数字媒体技术应用专业</p>
+              </div>
+              <div class="time-node">
+                <span>2024.7 - 2026.8</span>
+                <h3>杭州伴宇数码科技有限公司</h3>
+                <p>担任 3D 建模渲染师，负责公司产品高质量图片渲染制作与输出。</p>
+              </div>
+            </div>
+            <div class="tool-cloud reveal" aria-label="技能工具">
+              <span>Cinema 4D</span>
+              <span>Octane</span>
+              <span>KeyShot</span>
+              <span>Photoshop</span>
+              <span>Illustrator</span>
+              <span>After Effects</span>
+              <span>Marvelous Designer</span>
+              <span>Unfold3D</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="contact section-panel" id="contact">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>期待一起完成更有转化力的电商视觉。</h2>
+          <p>求职岗位：电商美工 3D ｜ 期望月薪：8000+ ｜ 广东深圳</p>
+        </div>
+        <div class="contact-list reveal">
+          <a href="tel:19898315796">
+            <span>电话</span>
+            <strong>19898315796</strong>
+          </a>
+          <a href="mailto:3224315229@qq.com">
+            <span>邮箱</span>
+            <strong>3224315229@qq.com</strong>
+          </a>
+          <div>
+            <span>地址</span>
+            <strong>广东省深圳市龙华区</strong>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal" id="workModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="作品大图预览">
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-panel">
+        <button class="modal-close" type="button" aria-label="关闭预览" data-close>×</button>
+        <div class="modal-info">
+          <span id="modalCategory"></span>
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc"></p>
+        </div>
+        <div class="modal-body">
+          <img id="modalImage" alt="">
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+
